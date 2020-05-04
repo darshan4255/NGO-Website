@@ -71,7 +71,7 @@ exit();
     <div class="login-box">
     <div class="row">
       <div class="col-md-6 log" >
-          <h2>Member login</h2>
+          <h2 style='text-align:center'> Sign in</h2>
           <form action="" method="post"  name="memvalidation">
             <!--we shift the action for form memvalidation in this file itself on top   <form action="memvalidation.php" method="post" name="memvalidation">-->
             <div class="form-group">
@@ -82,13 +82,15 @@ exit();
                 <label>Password</label>
                 <input type="password" name="password" class="form-control" required>
                 </div>
-                <button type="submit" class="btn btn-primary" name="memvalidation">Login</button>
-          </form>
+                <button type="submit" class="btn btn-primary" name="memvalidation">Sign in</button>
+								 <button type="button" class="btn btn-danger bottomright" onclick="location.href='memforgotpassword.php'" >Forgot password</button>
+
+		  </form>
       </div>
       <!--the above one is for login-->
       <!--the below one is for Registration-->
       <div class="col-md-6 reg" >
-          <h2>Member registration</h2>
+          <h2 style='text-align:center'>Register as a member</h2>
           <form action="" method="post" enctype="multipart/form-data" name="memregistration">
             <div class="form-group">
               <label>First name</label>
@@ -114,7 +116,7 @@ exit();
                 <label>Password</label>
                 <input type="password" name="password" class="form-control" required>
                 </div>
-                <button type="submit" class="btn btn-primary" name="memregistration">Register</button>
+                <button type="submit" class="btn btn-primary" name="memregistration">Sign up</button><br>
           </form>
       </div>
     </div>
